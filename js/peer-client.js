@@ -3,7 +3,7 @@ peerapp = (function() {
 
     console.log("Peer client started");
 
-    var PEER_SERVER = 'my-peer.herokuapp.com';
+    var PEER_SERVER = 'heavenchat.herokuapp.com';
     var PORT = 443;
     var connectedPeers = {};
     var myPeerID = generateRandomID(4);
@@ -23,7 +23,7 @@ peerapp = (function() {
         peer = new Peer(myPeerID, { host: PEER_SERVER, port: PORT, path: '/', secure: true });  
         peerCallbacks(peer);
     }    
-    // var peer = new Peer({ host: 'my-peer.herokuapp.com', port: '443', path: '/', secure: true });
+    // var peer = new Peer({ host: 'heavenchat.herokuapp.com', port: '443', path: '/', secure: true });
     // connectToServerWithId(myPeerID);
     console.log(peer)
 
